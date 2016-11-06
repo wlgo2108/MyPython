@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>游戏投注及检索界面</title>
+</head>
+<body>
+<form action="/search/" method="post">
+    <table border="1">
+        <tr>
+            <td>
+                省&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;份:
+            </td>
+            <td>
+                <select name="pro_code">
+                    <option value="GS">甘肃</option>
+                    <option value="SC">四川</option>
+                    <option value="GX">广西</option>
+
+                </select>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                游戏名称:
+            </td>
+            <td>
+                <select name="game_name">
+                    <option value="BOOL">双色球</option>
+                    <option value="3D">3D</option>
+                    <option value="Q730">七乐彩</option>
+                    <option value="K3">快三</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>销售期号:</td>
+            <td><input type="text" name="wager_issue" id="wager_issue" value="2016001"></td>
+        </tr>
+        <tr>
+            <td>流水号:</td>
+            <td>
+                <input type="text" name="tsn" id="tsn" value="0">
+            </td>
+        </tr>
+        <tr>
+            <td>站点编号:</td>
+            <td><input type="text" name="station_id" id = "station_id" ></td>
+        </tr>
+        <tr>
+            <td>
+                操作方式:
+            </td>
+            <td>
+                <select name="cz_type">
+                    <option value="1">投注</option>
+                    <option value="2">投注及检索</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2">
+                <input type="submit" value="操作" id="submit">
+                <input type="reset" value="重置" id="reset">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
